@@ -17,8 +17,9 @@
 5. **Конец.**
 ### Блок - схема
 <img width="701" height="921" alt="Untitled Diagram (1)" src="https://github.com/user-attachments/assets/1daff7c3-aec4-4e35-9246-e8b2d48214b6" />
+
 ## 2. Реализация программы
- ```c
+```c
 #include <stdio.h>
 #include <locale.h>
 
@@ -35,7 +36,7 @@ int main() {
     }
     return 0;
 }
- ```
+```
 ## 3. Реализация работы программы
 ### Пример 1:
 ```
