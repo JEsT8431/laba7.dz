@@ -17,3 +17,52 @@
 5. **Конец.**
 ### Блок - схема
 <img width="701" height="921" alt="Untitled Diagram (1)" src="https://github.com/user-attachments/assets/1daff7c3-aec4-4e35-9246-e8b2d48214b6" />
+## 2. Реализация программы
+ ```c
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "RUS");
+    char f; float a, b, c;
+    printf("Фигура (t/s/o/r): "); scanf(" %c", &f);
+
+    switch (f) {
+    case 't': scanf("%f %f %f", &a, &b, &c); printf("%.2f\n", (a + b + c) / 2); break;
+    case 's': scanf("%f", &a); printf("%.2f\n", a * a); break;
+    case 'o': scanf("%f", &a); printf("%.2f\n", 3.14159 * a * a); break;
+    case 'r': scanf("%f %f", &a, &b); printf("%.2f\n", a * b); break;
+    }
+    return 0;
+}
+ ```
+## 3. Реализация работы программы
+### Пример 1:
+```
+Фигура (t/s/o/r): t
+2
+3
+5
+5,00
+```
+### Пример 2:
+```
+Фигура (t/s/o/r): s
+4
+16,00
+```
+### Пример 3: 
+```
+Фигура (t/s/o/r): o
+6
+113,10
+```
+### Пример 4:
+```
+Фигура (t/s/o/r): r
+6
+5
+30,00
+```
+## Информация о разработчике
+Щербаков Дмитрий, бИЦТ-261
